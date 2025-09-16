@@ -1,0 +1,49 @@
+# 리스트 관련 연산자
+
+# 리스트 연결하기
+
+a = [1,2,3]
+b = [4,5,6]
+print(a+b)
+
+# 리스트 반복하기
+print( a* 3)
+
+# 리스트의 CRUD 함수
+# 데이터 추가 , 조회 , 수정, 삭제
+
+lis = [1,2,3]
+
+# append : 새로운 요소를 맨 뒤에 추가
+lis.append(4)
+print(lis)
+
+# 특정위치에 새로운 요소를 추가
+# 입력값 : 위치 , 값
+lis.insert(0,4)
+print(lis)
+
+# 값 수정하기
+lis[2] = 4
+print(lis)
+
+# 인덱스로 삭제하기
+del lis[1]
+print(lis)
+
+# 값으로 삭제하기
+# 같은 값이 여러개 있을떄는 , 제일 앞에 있는 요소가 삭제됨
+lis.remove(3)
+print(lis)
+
+# 마지막 요소를 꺼내면서 삭제
+last = lis.pop()
+print(lis, last)
+
+# 리스트의 크기 확인
+leng = len(lis)
+print(leng)
+
+
+
+
